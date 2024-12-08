@@ -4,7 +4,6 @@
 #include "Biquad.h"
 #include "Bmod.h"
 #include "ButterVA.h"
-#include "Chorus330.h"
 #include "Clock.h"
 #include "Counter.h"
 #include "Dcblock.h"
@@ -27,12 +26,8 @@
 #include "Superphasor.h"
 #include "SvfVA.h"
 #include "utilities.h"
-#include "Yafr2.h" ///////////////////////////////////////////////
-//#include "DattorroSimpleReverb.h" ///////////////////////////////////
+#include "Yafr2.h"
 
-#include "Reverb/Earlyref.h"
-#include "Reverb/Multitap.h"
-#include "Reverb/Reverb727.h"
 #include "Reverb/DattorroSmallTank.h"
 
 
