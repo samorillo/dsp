@@ -10,7 +10,6 @@ Collection of C++ classes for sound synthesis.
 
 # BASED ON...
 * simple effects (filters, delay, oscillators...) are straightforward implementations of the well-known algorithms
-* many classes are direct translations of *Pure Data* abstractions made by **Scott Nordlund** (also known as acreil)
 * Virtual Analog (VA) filters taken from *The Art of VA Filter Design* by **Vadim Zavalishin**
 
 
@@ -47,10 +46,10 @@ g: VA filters frequency constant (as in Zavalishin's book)
 
 * For any object that has a "operator()", it updates the state of the object. In general, methods that modify the parameters of the object should be called before "operator()", and all data of the object should be accessed after it. If some method is to be called after "operator()" its name ends in "_post", and if some data is to be read before "operator()" is called, its name ends in "_prev". Accessing data not marked "_prev" before "operator()" has ever been called has undefined behavior.
 
-* IF a variable has appended underscore THEN has both getter and setter defined. Those are methods taking the name of the variable, without underscore, and the setter might be of "_prev" type.
+* If a variable has appended underscore then has both getter and setter defined. Those are methods taking the name of the variable, without underscore, and the setter might be of "_prev" type.
 
-* A variable has getter IFF it has setter.
+* A variable has getter if and only if it has setter.
 
 * Templates are not used.
 
-* The only used data types are: bool, int, double, Double2 (just double[2] with basic mixing overloads).
+* The only used data types are: bool, int, double, Double2 (just double[2] with multiplication and sum overloads).
