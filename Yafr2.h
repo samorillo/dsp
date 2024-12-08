@@ -1,5 +1,5 @@
 /*
-adapted from "yafr2" abstraction in Max-MSP
+adapted from the "yafr2" abstraction in Max-MSP
 */
 
 #ifndef DSP_YAFR2
